@@ -3,7 +3,8 @@ pipeline{
   stages{
     stage("build"){
       steps{
-        echo 'hello from jenkins file'
+        sh 'npm install'
+        sh 'npm run build'
       }
     }
   }
