@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Student from './components/Student'
 import Child1 from './components/Child1';
-import Child2 from './components/Child2';
 
 
 function App() {
@@ -17,10 +15,6 @@ function App() {
     console.log('data received',data)
   }
   const moviesList =[{moviename:'the revenant',movieImg :'https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',gender:'adventure'},{moviename:'the revenant',movieImg :'https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg',gender:'adventure'}]
-  const style= {
-    color :'red',
-    backgroundColor:'black' 
-  }
   return (
     <div className="App">
       <Student getData={getData} studentsList={studentsList} studentName={fname} profession='web dev' moviesList={moviesList}></Student>
