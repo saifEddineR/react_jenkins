@@ -4,7 +4,6 @@ import MovieCard from './MovieCard';
 
 
 const Student = ({studentName,age,profession,studentsList,getData,moviesList,children}) => {
-  let welcome = 'welcome to react'
   let inputVal =''
   const handleInput = (e) =>{
 inputVal = e.target.value
